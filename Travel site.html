@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aviv.tour</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap Files-->
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Fonts cdn -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <!-- Animate cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <!-- Swiper cdn -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+        <!-- Flatpickr cdn -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
+    </head>
+    <body>
+        <!-- -- Nav Modal/register -- -->
+        <header>
+            <!-- Navbar -->
+            <nav
+                class="navbar border-bottom border-info fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="Portfolio.html"
+                        class="navbar-brand me-lg-0">Aviv.Tour <span
+                            class="fa fa-plane text-info"></span></a>
+                    <button class="border-0 navbar-toggler navbar-toggler-icon"
+                        data-bs-target="#navbar"
+                        data-bs-toggle="collapse"></button>
+                    <div
+                        class="collapse navbar-collapse p-2 d-lg-flex justify-content-between"
+                        id="navbar">
+                        <ul
+                            class="navbar-nav justify-content-center flex-grow-1">
+                            <li class="nav-item"><a href="Portfolio.html"
+                                    class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#form-tour"
+                                    class="nav-link">Book</a></li>
+                            <li class="nav-item"><a href="#gallery"
+                                    class="nav-link">Gallery</a></li>
+                            <li class="nav-item"><a href="#tours"
+                                    class="nav-link">Tour</a></li>
+                            <li class="nav-item"><a href="#contact"
+                                    class="nav-link">Contact us</a></li>
+                        </ul>
+                        <div class="nav-reg d-flex justify-content-center mt-2">
+                            <button class="btn btn-outline-info me-2"
+                                data-bs-target="#register"
+                                data-bs-toggle="modal">Register
+                            </button>
+                            <button class="btn btn-info"
+                                data-bs-target="#signin"
+                                data-bs-toggle="modal">Signin</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- Register Form -->
+            <div class="modal fade" id="register">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header border-bottom border-info">
+                            <h3
+                                class="modal-titr text-info fw-bolder">Register</h3>
+                            <button class="btn-close fa fa-close text-white"
+                                data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-control bg-dark border-0">
+                                <div class="row gy-3">
+                                    <div class="col-12">
+                                        <label class="form-label"
+                                            for="name">Name :</label>
+                                        <input id="name" type="text"
+                                            placeholder="John Doe"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label"
+                                            for="email">Email :</label>
+                                        <input id="email" type="email"
+                                            placeholder="John Doe@gmail.com"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label"
+                                            for="pass">Password :</label>
+                                        <input id="pass" type="password"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <label class="form-label"
+                                                    for="region">Region
+                                                    :</label>
+                                                <select id="region"
+                                                    class="form-select">
+                                                    <option value="1">United
+                                                        States</option>
+                                                    <option
+                                                        value="2">Israel</option>
+                                                    <option
+                                                        value="3">Germany</option>
+                                                    <option
+                                                        value="4">Norway</option>
+                                                    <option
+                                                        value="5">Sewden</option>
+                                                    <option
+                                                        value="6">France</option>
+                                                    <option value="7">United
+                                                        Kingdom</option>
+                                                    <option
+                                                        value="8">Egypt</option>
+                                                    <option
+                                                        value="9">Spain</option>
+                                                    <option
+                                                        value="10">Italy</option>
+                                                    <option
+                                                        value="11">Emirates</option>
+                                                    <option
+                                                        value="12">Brasil</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="form-label"
+                                                    for="birth">Birth Date
+                                                    :</label>
+                                                <input id="birth" type="date"
+                                                    class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div
+                                            class="row align-items-baseline pt-2 w-100">
+                                            <div class="col-6">
+                                                <a class="link-info"
+                                                    data-bs-target="#signin"
+                                                    data-bs-toggle="modal">Already
+                                                    have an account?</a>
+                                            </div>
+                                            <div
+                                                class="col-6 d-flex justify-content-end">
+                                                <button
+                                                    class="btn btn-info">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Signin Form -->
+            <div class="modal fade" id="signin">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header border-bottom border-info">
+                            <h3
+                                class="modal-titr text-info fw-bolder">Signin</h3>
+                            <button class="btn-close fa fa-close text-white"
+                                data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-control bg-dark border-0">
+                                <div class="row gy-3">
+                                    <div class="col-12">
+                                        <label class="form-label"
+                                            for="email">Email :</label>
+                                        <input id="email" type="email"
+                                            placeholder="John Doe@gmail.com"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label"
+                                            for="pass">Password :</label>
+                                        <input id="pass" type="password"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-check">
+                                                    <input id="remmberMe"
+                                                        type="checkbox"
+                                                        class="form-check-input">
+                                                    <label
+                                                        class="form-check-label"
+                                                        for="remmberMe">Remmber
+                                                        me</label>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="col-6 d-flex justify-content-end align-items-center">
+                                                <a class="link-info">Forgot
+                                                    Password?</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div
+                                            class="row align-items-baseline pt-2 w-100">
+                                            <div class="col-6">
+                                                <a class="link-info"
+                                                    data-bs-target="#register"
+                                                    data-bs-toggle="modal">Create
+                                                    have an account?</a>
+                                            </div>
+                                            <div
+                                                class="col-6 d-flex justify-content-end">
+                                                <button
+                                                    class="btn btn-info">Signin</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- -- Home Section -- -->
+        <section class="home" id="#home">
+            <!-- Swiper bg -->
+            <div class="swiper swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/Home-1.jpg"
+                            alt></div>
+                    <div class="swiper-slide"><img src="img/Home-2.jpg"
+                            alt></div>
+                    <div class="swiper-slide"><img src="img/Home-3.jpg"
+                            alt></div>
+                </div>
+                <div class="swiper-pagination swiper-pagination1"></div>
+            </div>
+            <!-- Home content -->
+            <div class="container">
+                <div class="home-content row text-center gy-md-5 gy-3">
+                    <div class="col-12">
+                        <h1 class="fw-bolder wow animate__fadeInDown">Let's
+                            Travel The World
+                            Together!</h1>
+                    </div>
+                    <div class="col-12">
+                        <h4 class="wow animate__fadeInDown">Find awesome
+                            flights hotels, holidayd, cabs, buses
+                            and cruise</h4>
+                    </div>
+                    <div class="col-12">
+                        <a href="#form-tour"
+                            class="btn btn-outline-info fw-bolder text-uppercase">explore</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -- Feature Section -- -->
+        <section class="feature py-5">
+            <div class="container">
+                <div class="feature-content">
+                    <div class="row gx-0 gx-md-5">
+                        <div
+                            class="col-12 col-lg-6 feature-img d-flex justify-content-center align-items-center">
+                            <img src="img/feature.jpg"
+                                class="img-fluid rounded-2 wow animate__fadeInLeft"
+                                alt>
+                        </div>
+                        <div
+                            class="col-12 col-lg-6 d-flex justify-content-center align-items-center my-4 my-lg-0">
+                            <div
+                                class="feature-context wow animate__rotateInDownLeft row gy-3 p-3 p-lg-0">
+                                <div class="col-12">
+                                    <h3 class="fw-bolder">Why choose us?</h3>
+                                    <p>World leading tour operator and
+                                        organization</p>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2"><img
+                                                src="img/icons-plane.png"
+                                                class="img-fluid"
+                                                alt="plane-icon"></div>
+                                        <div class="col-10">
+                                            <h4>Book with flexibility</h4>
+                                            <p>Book your trip easily
+                                                and quickly, get free
+                                                cancellation.
+                                                Explore the magnificent and
+                                                romantic
+                                                Europe in your way.</p></div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2"><img
+                                                src="img/icons-price-tag.png"
+                                                class="img-fluid"
+                                                alt="price-tags"></div>
+                                        <div class="col-10">
+                                            <h4>Best price guarantee</h4>
+                                            <p>We are committed to the best
+                                                prices
+                                                and many promotions to bring you
+                                                unforgettable European
+                                                adventures.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-2"><img
+                                                src="img/icons-online-support.png"
+                                                class="img-fluid"
+                                                alt="Online-support"></div>
+                                        <div class="col-10">
+                                            <h4>Free support 24/7</h4>
+                                            <p>We stand by you on every trip and
+                                                are
+                                                ready to assist you promptly
+                                                whenever you need us. We are
+                                                online
+                                                24/7.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- -- Europe Explore Section -- -->
+        <section class="europe-explore p-3">
+            <div class="container">
+                <div class="row py-5 gx-lg-4 gy-4 gy-lg-0">
+                    <div
+                        class="europe-context col-12 col-lg-3 text-white d-flex justify-content-lg-center align-items-lg-center flex-column wow animate__slideInDown">
+                        <h2 class="fw-bolder">Exploring Europe your way</h2>
+                        <p>Explore Europe's ancient civilization with its lavish
+                            and magnificent cities and romantic love scenes.</p>
+                    </div>
+                    <div class="col-12 col-lg-9">
+                        <div
+                            class="row align-items-stretch gx-lg-3 gy-lg-0 gy-4">
+                            <div class="col-12 col-lg-4 col-md-12 flex-fill">
+                                <div
+                                    class="card rounded-3 h-100 border-0 wow animate__backInRight">
+                                    <figure
+                                        class="rounded-top-3 overflow-hidden">
+                                        <a href="#">
+                                            <img class="img-fluid"
+                                                src="img/groupAdv.jpg"
+                                                alt="Group Adventure">
+                                        </a>
+                                    </figure>
+                                    <div class="card-body p-3 px-4 py-4">
+                                        <h5 class="card-title fw-bolder">Group
+                                            Adventures</h5>
+                                        <p class="card-text">Join a friendly
+                                            travel group for unforgettable
+                                            trips.</p>
+                                        <a href="#" class="card-link">Explorer
+                                            <span
+                                                class="fa fa-arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-6 flex-fill">
+                                <div
+                                    class="card rounded-3 h-100 border-0 wow animate__backInRight">
+                                    <figure
+                                        class="rounded-top-3 overflow-hidden">
+                                        <a href="#">
+                                            <img class="img-fluid"
+                                                src="img/privateAdv.jpg"
+                                                alt="Private Adventure">
+                                        </a>
+                                    </figure>
+                                    <div class="card-body p-3 px-4 py-4">
+                                        <h5 class="card-title fw-bolder">Private
+                                            Adventures</h5>
+                                        <p class="card-text">Travel exclusively
+                                            with your friends, family and loved
+                                            ones.</p>
+                                        <a href="#" class="card-link">Explorer
+                                            <span
+                                                class="fa fa-arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-6 flex-fill">
+                                <div
+                                    class="card rounded-3 h-100 border-0 wow animate__backInRight">
+                                    <figure
+                                        class="rounded-top-3 overflow-hidden">
+                                        <a href="#">
+                                            <img class="img-fluid"
+                                                src="img/singleAdv.jpg"
+                                                alt="Single Adventure">
+                                        </a>
+                                    </figure>
+                                    <div class="card-body p-3 px-4 py-4">
+                                        <h5
+                                            class="card-title fw-bolder">Tailor-Made
+                                            Adventures</h5>
+                                        <p class="card-text">Customize an
+                                            existing itinerary or create your
+                                            own.</p>
+                                        <a href="#" class="card-link">Explorer
+                                            <span
+                                                class="fa fa-arrow-right"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -- World Category Section -- -->
+        <section class="category p-2 py-5">
+            <div class="container">
+                <div
+                    class="row gy-md-4 gy-xl-0 gy-4 wow animate__bounceInLeft animate__slow">
+                    <div class="col-6 col-xl-2 col-md-4">
+                        <a href="#"
+                            class="img-box overflow-hidden rounded-3 d-block">
+                            <figure>
+                                <img class="img-fluid" src="img/Ecotourism.jpg"
+                                    alt>
+                                <figcaption>Ecotourism & Resort</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-4">
+                        <a href="#"
+                            class="img-box overflow-hidden rounded-3 d-block">
+                            <figure>
+                                <img class="img-fluid" src="img/Calture.jpg"
+                                    alt>
+                                <figcaption>Cultural & Foods</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-4">
+                        <a href="#"
+                            class="img-box overflow-hidden rounded-3 d-block">
+                            <figure>
+                                <img class="img-fluid" src="img/Explorer.jpg"
+                                    alt>
+                                <figcaption>Explorer & Adventure</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-4">
+                        <a href="#"
+                            class="img-box overflow-hidden rounded-3 d-block">
+                            <figure>
+                                <img class="img-fluid" src="img/Festival.jpg"
+                                    alt>
+                                <figcaption>Festival & Events</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-4">
+                        <a href="#"
+                            class="img-box overflow-hidden rounded-3 d-block">
+                            <figure>
+                                <img class="img-fluid" src="img/Museums.jpg"
+                                    alt>
+                                <figcaption>Museums & Exhibitions</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="col-6 col-xl-2 col-md-4">
+                        <a href="#"
+                            class="img-box see-all overflow-hidden rounded-3 d-block">
+                            <figure>
+                                <img class="img-fluid"
+                                    src="img/Israel-ezgif.com-resize1.jpg" alt>
+                                <figcaption>SEE ALL +</figcaption>
+                            </figure>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -- Form Tour Section -- -->
+        <section class="form-tour pb-5 p-3" id="form-tour">
+            <div class="container">
+                <div
+                    class="form-tour-context d-flex justify-content-center p-2">
+                    <h2>Find Best Tour</h2>
+                </div>
+                <div class="form-tour-content p-2 wow animate__zoomIn">
+                    <form action="#" class="form-control p-4">
+                        <div class="row gy-3 gx-lg-3 gy-lg-0">
+                            <div class="col-12 col-lg-10">
+                                <div class="row gy-4 gx-lg-2 gy-lg-0">
+                                    <div class="col-12 col-lg-4 p-lg-0">
+                                        <div class="input-group rounded-3 p-1">
+                                            <label for="where"
+                                                class="input-group-text border-0 bg-transparent"><span
+                                                    class="fa fa-map-pin fs-4"></span></label>
+                                            <input type="text" id="where"
+                                                class="form-control border-0 bg-transparent ps-0"
+                                                placeholder="Where are you going?">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 col-lg-4 p-lg-0">
+                                        <div class="input-group rounded-3 p-1">
+                                            <label
+                                                class="input-group-text bg-transparent border-0"
+                                                for="when"><span
+                                                    class="fa fa-calendar fs-4"></span></label>
+                                            <input id="when" type="datetime"
+                                                class="flatpickr-input form-control bg-transparent border-0 ps-0"
+                                                placeholder="When do you go?"
+                                                readonly="readonly"
+                                                data-input>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="col-12 col-md-6 col-lg-4 p-lg-0">
+                                        <div class="input-group rounded-3 p-1">
+                                            <label for="adventures"
+                                                class="input-group-text bg-transparent border-0"><span
+                                                    class="fa fa-users fs-4"></span></label>
+                                            <div class="dropdown flex-grow-1">
+                                                <button
+                                                    class="btn btn-light bg-transparent dropdown-toggle border-0 w-100 ps-0 text-start"
+                                                    data-bs-toggle="dropdown"
+                                                    data-bs-auto-close="outside"
+                                                    type="button"
+                                                    data-bs-display="static">All
+                                                    Adventures</button>
+                                                <ul class="dropdown-menu p-3"
+                                                    data-bs-popper="static">
+                                                    <li class="form-check">
+                                                        <input id="chkall"
+                                                            type="checkbox"
+                                                            class="form-check-input">
+                                                        <label for="chkall"
+                                                            class="form-check-label">
+                                                            <strong>All
+                                                                Adventures</strong>
+                                                            <p>All the
+                                                                adventures I can
+                                                                experience.</p>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-check">
+                                                        <input id="chkgroup"
+                                                            type="checkbox"
+                                                            class="form-check-input">
+                                                        <label for="chkgroup"
+                                                            class="form-check-label">
+                                                            <strong>Group
+                                                                Adventures</strong>
+                                                            <p>Join a group and
+                                                                forge
+                                                                friendships.</p>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-check">
+                                                        <input id="chkprivt"
+                                                            type="checkbox"
+                                                            class="form-check-input">
+                                                        <label for="chkprivt"
+                                                            class="form-check-label">
+                                                            <strong>Private
+                                                                Adventures</strong>
+                                                            <p>Travel with your
+                                                                friends and
+                                                                family.</p>
+                                                        </label>
+                                                    </li>
+                                                    <li class="form-check">
+                                                        <input id="chkself"
+                                                            type="checkbox"
+                                                            class="form-check-input">
+                                                        <label for="chkself"
+                                                            class="form-check-label">
+                                                            <strong>Self-guided
+                                                                Adventures</strong>
+                                                            <p>Be your own guide
+                                                                with
+                                                                everything.</p>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-2 p-lg-0">
+                                <button type="submit"
+                                    class="btn find-tour w-100 py-2"> Find
+                                    Tour </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+        <!-- -- Top World Section -- -->
+        <section class="top-world p-xl-3" id="gallery">
+            <div class="container">
+                <div class="top-world-context p-3 wow animate__fadeInDown">
+                    <h2>Top ancient tourist countries of the world</h2>
+                    <h5>The attractive tourist countries in the world</h5>
+                </div>
+                <div
+                    class="top-world-content p-3 text-center wow animate__bounceInUp animate__slow">
+                    <div class="row gy-3 g-md-3">
+                        <div class="col-xl-4 col-md-3">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/israel.jpg);"></span>
+                                <h5>Israel</h5>
+                                <p>23 Tours</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-2 col-md-3">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/italy.jpg);"></span>
+                                <h5>Italy</h5>
+                                <p>90 Tours</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-2 col-md-6">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/sweden.jpg);"></span>
+                                <h5>Sweden</h5>
+                                <p>24 Tours</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-md-3">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/iran.jpg);"></span>
+                                <h5>Iran</h5>
+                                <p>28 Tours</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-2 col-md-6">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/US.jpg);"></span>
+                                <h5>United State</h5>
+                                <p>32 Tours</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-2 col-md-3">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/spain.jpg);"></span>
+                                <h5>Spain</h5>
+                                <p>57 Tours</p>
+                            </a>
+                        </div>
+                        <div class="col-xl-4 col-md-6">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/france.jpg);"></span>
+                                <h5>France</h5>
+                                <p>74 Tours</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-2 col-md-3">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/netherland.jpg);"></span>
+                                <h5>Netherland</h5>
+                                <p>68 Tours</p>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xl-2 col-md-3">
+                            <a href="#"
+                                class="text-white overflow-hidden rounded-3">
+                                <span class="top-world-img"
+                                    style="background-image: url(img/greece.jpg);"></span>
+                                <h5>Greece</h5>
+                                <p>89 Tours</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- -- Tour Grid Section -- -->
+        <section class="tour-grid mt-4" id="tours">
+                <div class="container">
+                    <div
+                        class="tour-grid-context mb-4 wow animate__fadeInUpBig">
+                        <h2>Top Europe Tours</h2>
+                        <h5>Attractive tours are chosen by many tourists</h5>
+                    </div>
+                    <div class="tour-grid-content wow animate__fadeIn">
+                        <div class="swiper swiper2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card border-0 overflow-hidden">
+                                        <figure
+                                            class="overflow-hidden rounded-4">
+                                            <a href><img class="img-fluid"
+                                                    src="img/grid-tour/louvre.jpg"
+                                                    alt></a>
+                                        </figure>
+                                        <div class="card-body text-start">
+                                            <p class="h6">3 DAY - PARIS <span
+                                                    class="text-muted"> ( 616
+                                                    reviews )</span> </p>
+                                            <a href="#"
+                                                class="h5 fw-bolder">Louvre
+                                                Museum Guided Tour with Skip the
+                                                Line Entrance</a>
+                                            <p
+                                                class="h5 fw-bolder text-danger mt-2">$398
+                                                <span
+                                                    class="h6 text-muted text-decoration-line-through">$512</span></p>
+                                            <p class="h6">includes taxes &
+                                                fees</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="card border-0 overflow-hidden">
+                                        <figure
+                                            class="overflow-hidden rounded-4">
+                                            <a href><img class="img-fluid"
+                                                    src="img/grid-tour/grandcanal.jpg"
+                                                    alt></a>
+                                        </figure>
+                                        <div class="card-body text-start">
+                                            <p class="h6">3 DAY - VENICE <span
+                                                    class="text-muted"> ( 738
+                                                    reviews )</span> </p>
+                                            <a href="#"
+                                                class="h5 fw-bolder">Grand Canal
+                                                Gondola Ride with App
+                                                Commentary</a>
+                                            <p
+                                                class="h5 fw-bolder text-danger mt-2">$489
+                                                <span
+                                                    class="h6 text-muted text-decoration-line-through">$579</span></p>
+                                            <p class="h6">includes taxes &
+                                                fees</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="card border-0 overflow-hidden">
+                                        <figure
+                                            class="overflow-hidden rounded-4">
+                                            <a href><img class="img-fluid"
+                                                    src="img/grid-tour/stonehenge.jpg"
+                                                    alt></a>
+                                        </figure>
+                                        <div class="card-body text-start">
+                                            <p class="h6">3 DAY - LONDON <span
+                                                    class="text-muted"> ( 894
+                                                    reviews )</span> </p>
+                                            <a href="#"
+                                                class="h5 fw-bolder">Full-Day
+                                                Windsor, Stonehenge, and Oxford
+                                                Tour</a>
+                                            <p
+                                                class="h5 fw-bolder text-danger mt-2">$399
+                                                <span
+                                                    class="h6 text-muted text-decoration-line-through">$479</span></p>
+                                            <p class="h6">includes taxes &
+                                                fees</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="card border-0 overflow-hidden">
+                                        <figure
+                                            class="overflow-hidden rounded-4">
+                                            <a href><img class="img-fluid"
+                                                    src="img/grid-tour/rome.jpg"
+                                                    alt></a>
+                                        </figure>
+                                        <div class="card-body text-start">
+                                            <p class="h6">3 DAY - ROME <span
+                                                    class="text-muted"> ( 917
+                                                    reviews )</span> </p>
+                                            <a href="#"
+                                                class="h5 fw-bolder">Full-Day
+                                                Windsor, Stonehenge, and Oxford
+                                                Tour</a>
+                                            <p
+                                                class="h5 fw-bolder text-danger mt-2">$489
+                                                <span
+                                                    class="h6 text-muted text-decoration-line-through">$599</span></p>
+                                            <p class="h6">includes taxes &
+                                                fees</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="card border-0 overflow-hidden">
+                                        <figure
+                                            class="overflow-hidden rounded-4">
+                                            <a href><img class="img-fluid"
+                                                    src="img/grid-tour/beach.jpg"
+                                                    alt></a>
+                                        </figure>
+                                        <div class="card-body text-start">
+                                            <p class="h6">3 DAY - NICE <span
+                                                    class="text-muted"> ( 356
+                                                    reviews )</span> </p>
+                                            <a href="#"
+                                                class="h5 fw-bolder">Old Town
+                                                Treasures and Castle Hill
+                                                Walking Tour</a>
+                                            <p
+                                                class="h5 fw-bolder text-danger mt-2">$379
+                                                <span
+                                                    class="h6 text-muted text-decoration-line-through">$419</span></p>
+                                            <p class="h6">includes taxes &
+                                                fees</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="card border-0 overflow-hidden">
+                                        <figure
+                                            class="overflow-hidden rounded-4">
+                                            <a href><img class="img-fluid"
+                                                    src="img/grid-tour/bridge.jpeg"
+                                                    alt></a>
+                                        </figure>
+                                        <div class="card-body text-start">
+                                            <p class="h6">3 DAY - FLORANCE <span
+                                                    class="text-muted"> ( 763
+                                                    reviews )</span> </p>
+                                            <a href="#"
+                                                class="h5 fw-bolder">Dome Climb,
+                                                Museum and Baptistry Small-Group
+                                                Tour</a>
+                                            <p
+                                                class="h5 fw-bolder text-danger mt-2">$439
+                                                <span
+                                                    class="h6 text-muted text-decoration-line-through">$589</span></p>
+                                            <p class="h6">includes taxes &
+                                                fees</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide ">
+                                    <div class="card border-0 overflow-hidden">
+                                        <figure
+                                            class="overflow-hidden rounded-4">
+                                            <a href><img class="img-fluid"
+                                                    src="img/grid-tour/windmill.jpg"
+                                                    alt></a>
+                                        </figure>
+                                        <div class="card-body text-start">
+                                            <p class="h6">3 DAY - AMSTERDAM
+                                                <span
+                                                    class="text-muted"> ( 511
+                                                    reviews )</span> </p>
+                                            <a href="#"
+                                                class="h5 fw-bolder">Zaanse
+                                                Schans, Edam, Volendam & Marken
+                                                Bus Tour</a>
+                                            <p
+                                                class="h5 fw-bolder text-danger mt-2">$419
+                                                <span
+                                                    class="h6 text-muted text-decoration-line-through">$539</span></p>
+                                            <p class="h6">includes taxes &
+                                                fees</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev swiper-circle"></div>
+                            <div class="swiper-button-next swiper-circle"></div>
+                            <div
+                                class="swiper-pagination swiper-pagination2 w-100"></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- -- Footer -- -->
+        <footer class="mt-5 bg-dark text-white p-2 pt-5" id="contact">
+                <div class="container">
+                    <div class="row gx-4 gy-md-3">
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <h5 class="text-uppercase">Info</h5>
+                            <p>Formats</p>
+                            <p>Comperssion</p>
+                            <p>Pricing</p>
+                            <p>FAQ</p>
+                            <p>Satus</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <h5 class="text-uppercase">Resources</h5>
+                            <p>Developer API</p>
+                            <p>Tools</p>
+                            <p>Blog</p>
+                        </div>
+                        <div class="col-lg-2 col-md-4">
+                            <h5 class="text-uppercase">company</h5>
+                            <p>About Us</p>
+                            <p>Sustainability</p>
+                            <p>Terms of Service</p>
+                            <p>Privacy</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="subs-icons">
+                                <div class="subs-container mb-4">
+                                    <div class="subs-input w-100 m-2">
+                                        <label class="form-label"
+                                            for="subscribe-input">Subscribe
+                                            to our email newsletter</label>
+                                        <input id="subscribe-input"
+                                            type="email"
+                                            class="form-control bg-transparent text-white border-info rounded-0"
+                                            placeholder="Your email">
+                                    </div>
+                                    <div class="subs-btn m-2">
+                                        <button
+                                            class="btn btn-info rounded-0 text-uppercase">subscribe</button>
+                                    </div>
+
+                                </div>
+                                <div class="icons-container m-2">
+                                    <p class="form-label mb-2 w-100">Fallow us</p>
+                                    <div class="footer-icons mt-2">
+                                        <a href="#"
+                                            class="footer-icon-squar text-white rounded-1"
+                                            style="background-color: rgb(21, 180, 15);"><span
+                                                class="fab fa-trade-federation"></span></a>
+                                        <a href="#"
+                                            class="footer-icon-squar text-white rounded-1"
+                                            style="background-color: #4297c4;"><span
+                                                class="fab fa-twitter"></span></a>
+                                        <a href="#"
+                                            class="footer-icon-squar text-white rounded-1"
+                                            style="background-color: #229ED9;"><span
+                                                class="fab fa-telegram"></span></a>
+                                        <a href="#"
+                                            class="footer-icon-squar text-white rounded-1"
+                                            style="background-color: #ff0808;"><span
+                                                class="fab fa-youtube"></span></a>
+                                    </div>
+                                </div></div>
+
+                        </div>
+                    </div>
+                    <h6 class="text-center text-secondary pt-3">&copy; 2023 LordCross, All rights reserved</h6>
+                </div>
+            </div>
+        </footer>
+        <!-- Swiper js -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+        <!-- Bootstrap Script -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- Wow Script -->
+        <script src="js/wow.min.js"></script>
+        <!-- Flatpickr js -->
+        <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/index.js"></script>
+        <!-- initialization -->
+        <script>
+            //WOW
+                new WOW({animateClass: 'animate__animated'}).init();
+            //Swiper
+        var swiper1 = new Swiper(".swiper1", {
+        direction: 'vertical',
+        spaceBetween: 0,
+        speed: 700,
+        centeredSlides: true,
+        autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination1",
+        clickable: true,
+      },
+    });
+    //gridSwiper
+
+    var swiper2 = new Swiper(".swiper2", {
+        loop: true,
+        breakpoints: {
+            360: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            576: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            992: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
+        pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+    })
+    // Flatpickr
+    flatpickr("#when",{
+        altInput: true,
+        altFormat: "F Y",
+        dateFormat: "Y-m",
+        enableTime: false,
+        minDate: "today",
+        mode: "single",
+        plugins: [
+        new monthSelectPlugin({
+          shorthand: true,
+          dateFormat: "m.y", 
+          altFormat: "F Y", 
+          theme: "light",
+        })
+    ],
+        onReady: function(selectedDates, dateStr, instance) {
+        instance.innerContainer.querySelector(".flatpickr-monthDropdown-months").style.display = 'none'; 
+    }
+    })
+        </script>
+
+    </body>
+</html>

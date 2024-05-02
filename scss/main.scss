@@ -1,0 +1,27 @@
+$dark: #2c3333;
+$cyan: #a5c9ca;
+$form-check-input-checked-bg-color: $cyan;
+$form-check-input-checked-border-color: $cyan;
+$carousel-indicator-active-bg: $cyan;
+
+
+
+//Nav override
+.nav-link {
+  text-align: center;
+  font-weight: 600;
+  color: aliceblue !important;
+  letter-spacing: 1px;
+  font-size: 15px !important;
+  &:hover {
+    color: $cyan !important;
+  }
+}
+
+.modal {
+  input {
+    border: $cyan 1px solid;
+  }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
