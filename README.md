@@ -1,2 +1,4 @@
 # Travel-Site
-My first site designed by Bootstrap
+I used the Javascript libraries like Swiper, Wow, and Flatpickr for the first time.  
+also i used Sass to customize Bootstrap.
+
